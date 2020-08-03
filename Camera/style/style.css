@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0; }
+
+button {
+  all: unset; }
+
+a {
+  text-decoration: none !important; }
+
+body {
+  direction: rtl;
+  height: 3000px; }
+
+@media only screen and (min-width: 1350px) {
+  .home-page-wrapper .container {
+    max-width: 1300px; } }
+@media only screen and (min-width: 1750px) {
+  .home-page-wrapper .container {
+    max-width: 1655px; } }
+.home-page-wrapper .nav-container {
+  position: relative; }
+  .home-page-wrapper .nav-container .navbar {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    left: 0; }
+    @media screen and (min-width: 991px) {
+      .home-page-wrapper .nav-container .navbar {
+        padding-left: 0;
+        padding-right: 0; } }
+    .home-page-wrapper .nav-container .navbar .navbar-brand {
+      margin-left: 84px; }
+    .home-page-wrapper .nav-container .navbar .navbar-brand, .home-page-wrapper .nav-container .navbar .nav-link {
+      color: #000;
+      font-family: Cairo;
+      font-size: 20px;
+      font-weight: 600;
+      transition: 400ms all; }
+      @media screen and (max-width: 1200px) {
+        .home-page-wrapper .nav-container .navbar .navbar-brand, .home-page-wrapper .nav-container .navbar .nav-link {
+          color: #FFF; } }
+      .home-page-wrapper .nav-container .navbar .navbar-brand:hover, .home-page-wrapper .nav-container .navbar .nav-link:hover {
+        color: #e63946 !important; }
+    .home-page-wrapper .nav-container .navbar .nav-item {
+      margin-left: 66px; }
+      .home-page-wrapper .nav-container .navbar .nav-item .nav-link {
+        color: #000; }
+        @media screen and (max-width: 1200px) {
+          .home-page-wrapper .nav-container .navbar .nav-item .nav-link {
+            color: #FFF; } }
+      .home-page-wrapper .nav-container .navbar .nav-item.search {
+        margin-left: 0;
+        padding: 20px 0; }
+        .home-page-wrapper .nav-container .navbar .nav-item.search svg {
+          cursor: pointer; }
+.home-page-wrapper .camera-header {
+  height: fit-content;
+  position: relative; }
+  .home-page-wrapper .camera-header .camera-image {
+    background: #457b9d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (max-width: 1200px) {
+      .home-page-wrapper .camera-header .camera-image {
+        position: static;
+        width: 100%;
+        padding: 100px 0; } }
+    .home-page-wrapper .camera-header .camera-image img {
+      max-width: 90%; }
+  .home-page-wrapper .camera-header .camera-description {
+    padding: 206px 0 184px 60px;
+    position: relative; }
+    @media screen and (max-width: 1200px) {
+      .home-page-wrapper .camera-header .camera-description {
+        padding: 0;
+        margin-top: 50px;
+        padding-bottom: 50px; } }
+    .home-page-wrapper .camera-header .camera-description .title {
+      color: #000;
+      font-family: Cairo;
+      font-size: 70px;
+      font-weight: 700;
+      line-height: 111px;
+      max-width: 90%;
+      margin-bottom: 14px; }
+      @media screen and (max-width: 1200px) {
+        .home-page-wrapper .camera-header .camera-description .title {
+          max-width: 100%; } }
+    .home-page-wrapper .camera-header .camera-description .des {
+      color: #959595;
+      font-family: Cairo;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 65px;
+      margin-bottom: 28px; }
+    .home-page-wrapper .camera-header .camera-description .price {
+      color: #457b9d;
+      font-family: Cairo;
+      font-size: 30px;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 36px; }
+    .home-page-wrapper .camera-header .camera-description .buy-now {
+      font-family: Cairo;
+      font-size: 30px;
+      font-weight: 600;
+      box-shadow: 0 3px 20px rgba(230, 57, 70, 0.16);
+      border-radius: 40px;
+      background-color: #e63946;
+      padding: 18px 83px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 400ms all;
+      cursor: pointer;
+      width: fit-content;
+      margin-bottom: 50px; }
+      @media screen and (max-width: 500px) {
+        .home-page-wrapper .camera-header .camera-description .buy-now {
+          padding: 18px 50px; } }
+      .home-page-wrapper .camera-header .camera-description .buy-now:hover {
+        background: #457b9d; }
+      .home-page-wrapper .camera-header .camera-description .buy-now a {
+        color: #FFF; }
+    .home-page-wrapper .camera-header .camera-description .swiper-pagination {
+      bottom: 0;
+      left: 100px; }
+      @media screen and (max-width: 1750px) {
+        .home-page-wrapper .camera-header .camera-description .swiper-pagination {
+          left: 80px; } }
+      @media screen and (max-width: 1200px) {
+        .home-page-wrapper .camera-header .camera-description .swiper-pagination {
+          left: 10px; } }
+      .home-page-wrapper .camera-header .camera-description .swiper-pagination .swiper-pagination-bullet {
+        width: auto;
+        height: auto;
+        background: none;
+        color: #959595;
+        font-family: Cairo;
+        font-size: 20px;
+        font-weight: 600;
+        position: relative; }
+        .home-page-wrapper .camera-header .camera-description .swiper-pagination .swiper-pagination-bullet:not(:last-child) {
+          margin-left: 10px; }
+        .home-page-wrapper .camera-header .camera-description .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+          margin-left: 120px; }
+          .home-page-wrapper .camera-header .camera-description .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background: #707070;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%); }
+.home-page-wrapper .our-products {
+  overflow: hidden;
+  position: relative;
+  margin-top: 150px;
+  height: fit-content;
+  margin-bottom: 50px; }
+  @media screen and (max-width: 1200px) {
+    .home-page-wrapper .our-products {
+      margin-top: 80px; } }
+  .home-page-wrapper .our-products .title {
+    text-align: center;
+    margin-bottom: 188px; }
+    @media screen and (max-width: 1542px) {
+      .home-page-wrapper .our-products .title {
+        margin-bottom: 88px; } }
+    .home-page-wrapper .our-products .title h3 {
+      color: #393939;
+      font-family: Cairo;
+      font-size: 40px;
+      font-weight: 700; }
+      .home-page-wrapper .our-products .title h3 span {
+        display: inline-block;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e63946; }
+  .home-page-wrapper .our-products .left-product {
+    position: absolute;
+    left: -100px; }
+    .home-page-wrapper .our-products .left-product img {
+      max-width: 100%; }
+    @media screen and (max-width: 1750px) {
+      .home-page-wrapper .our-products .left-product {
+        left: -200px; }
+        .home-page-wrapper .our-products .left-product img {
+          max-width: 90%; } }
+    @media screen and (max-width: 1542px) {
+      .home-page-wrapper .our-products .left-product {
+        position: static;
+        text-align: center;
+        padding: 0 30px; } }
+  .home-page-wrapper .our-products .products {
+    padding-top: 50px;
+    padding-bottom: 130px; }
+    @media screen and (max-width: 1542px) {
+      .home-page-wrapper .our-products .products {
+        padding: 0;
+        margin-top: 90px;
+        justify-content: center !important; } }
+  .home-page-wrapper .our-products .product {
+    max-width: 318px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto; }
+    .home-page-wrapper .our-products .product .image-product {
+      height: 318px;
+      margin-bottom: 27px;
+      position: relative;
+      overflow: hidden; }
+      .home-page-wrapper .our-products .product .image-product img {
+        width: 100%;
+        height: 100%; }
+        .home-page-wrapper .our-products .product .image-product img:hover + .layout {
+          top: 0; }
+      .home-page-wrapper .our-products .product .image-product:hover img + .layout {
+        top: 0; }
+      .home-page-wrapper .our-products .product .image-product .layout {
+        background: #e63946;
+        top: -318px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 400ms top;
+        z-index: 33; }
+        .home-page-wrapper .our-products .product .image-product .layout p {
+          color: #FFF;
+          font-family: Cairo;
+          font-size: 26px;
+          font-weight: 700;
+          border-radius: 5px;
+          text-align: center; }
+          .home-page-wrapper .our-products .product .image-product .layout p:not(:last-child) {
+            margin-bottom: 10px; }
+    .home-page-wrapper .our-products .product h3 {
+      color: #000;
+      font-family: Cairo;
+      font-size: 20px;
+      font-weight: 700;
+      border-radius: 5px;
+      padding: 24px;
+      text-align: center; }
+    .home-page-wrapper .our-products .product.product1 h3 {
+      background: #ffdf34; }
+    .home-page-wrapper .our-products .product.product2 h3 {
+      background: #ff0090; }
+    .home-page-wrapper .our-products .product.product3 h3 {
+      background: #ffd974; }
+.home-page-wrapper .our-service {
+  padding-top: 130px;
+  position: relative; }
+  .home-page-wrapper .our-service .call-now {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #457b5d;
+    width: 211px;
+    justify-content: space-between;
+    padding: 24px 20px;
+    align-items: center;
+    position: fixed;
+    top: 530px;
+    z-index: 33;
+    right: -151px;
+    transition: 400ms right;
+    border-radius: 20px; }
+    .home-page-wrapper .our-service .call-now:hover {
+      right: 0; }
+    .home-page-wrapper .our-service .call-now .contacts {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse; }
+      .home-page-wrapper .our-service .call-now .contacts svg.what-app {
+        margin-right: 10px; }
+    .home-page-wrapper .our-service .call-now h3 {
+      color: #FFF;
+      font-family: Cairo;
+      font-size: 20px;
+      font-weight: 700; }
+  .home-page-wrapper .our-service .title {
+    text-align: center;
+    margin-bottom: 108px; }
+    @media screen and (max-width: 1024px) {
+      .home-page-wrapper .our-service .title {
+        margin-bottom: 50px; } }
+    .home-page-wrapper .our-service .title h3 {
+      color: #393939;
+      font-family: Cairo;
+      font-size: 40px;
+      font-weight: 700; }
+      .home-page-wrapper .our-service .title h3 span {
+        display: inline-block;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e63946; }
+  .home-page-wrapper .our-service .service {
+    max-width: 480px;
+    transition: 400ms all linear;
+    margin-bottom: 30px; }
+    .home-page-wrapper .our-service .service:hover {
+      margin-top: 94px; }
+      .home-page-wrapper .our-service .service:hover .content {
+        background: #e63946; }
+        .home-page-wrapper .our-service .service:hover .content h3 {
+          color: #FFF; }
+    .home-page-wrapper .our-service .service .image img {
+      width: 100%; }
+    .home-page-wrapper .our-service .service .content {
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      max-width: 93%;
+      margin: -20px auto 0;
+      padding: 46px 20px;
+      transition: 400ms all linear;
+      text-align: center; }
+      @media screen and (max-width: 1350px) {
+        .home-page-wrapper .our-service .service .content {
+          padding: 26px 7px; } }
+      .home-page-wrapper .our-service .service .content h3 {
+        color: #000;
+        font-family: Cairo;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 41px; }
+.home-page-wrapper .camera-footer {
+  background: #457b9d;
+  padding: 100px 0;
+  margin-top: 204px; }
+  @media screen and (max-width: 1542px) {
+    .home-page-wrapper .camera-footer {
+      margin-top: 100px; } }
+  .home-page-wrapper .camera-footer .title {
+    color: #FFF;
+    font-family: Cairo;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 144px;
+    transition: 400ms all; }
+    @media screen and (max-width: 1350px) {
+      .home-page-wrapper .camera-footer .title {
+        margin-bottom: 80px; } }
+    .home-page-wrapper .camera-footer .title:hover {
+      color: #e63946; }
+  .home-page-wrapper .camera-footer .social {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-bottom: 144px; }
+    @media screen and (max-width: 1350px) {
+      .home-page-wrapper .camera-footer .social {
+        margin-bottom: 80px; } }
+    .home-page-wrapper .camera-footer .social .link {
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      width: 78px;
+      height: 78px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition: 400ms all; }
+      .home-page-wrapper .camera-footer .social .link:hover {
+        }
+      .home-page-wrapper .camera-footer .social .link:not(:last-child) {
+        margin-right: 40px; }
+  .home-page-wrapper .camera-footer .copy-right {
+    text-align: center; }
+    .home-page-wrapper .camera-footer .copy-right p {
+      color: #FFF;
+      font-family: Cairo;
+      font-size: 22px;
+      font-weight: 600;
+      transition: 400ms all; }
+      .home-page-wrapper .camera-footer .copy-right p:hover {
+        color: #e63946; }
+        .home-page-wrapper .camera-footer .copy-right p:hover a {
+          color: #e63946; }
+      .home-page-wrapper .camera-footer .copy-right p a {
+        transition: 400ms all;
+        color: #FFF; }
+.home-page-wrapper .camera-footer .copy-right p a {
+	background-color: aliceblue;
+}
+.home-page-wrapper .camera-footer .copy-right p a img{
+	width: 100px;
+	height: 30px;
+}
+
+
+.contacto{
+	padding: 20px 0;
+	background-color: #eeee;
+}
+.contacto h3{
+	font-family: Cairo;
+      font-size: 20px;
+      font-weight: 700;
+	margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
